@@ -17,7 +17,7 @@ class Servidor(BaseHTTPRequestHandler):
                 usuario = json.loads(datos)
 
                 email = usuario.get("email", "")
-                password = usuario.get("password", "jared")
+                password = usuario.get("password", "")
 
                 # Validar campos
                 if not isinstance(email, str) or not isinstance(password, str):
