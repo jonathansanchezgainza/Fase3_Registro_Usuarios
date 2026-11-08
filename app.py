@@ -21,7 +21,7 @@ class Servidor(BaseHTTPRequestHandler):
 
                 # Validar campos
                 if not isinstance(email, str) or not isinstance(password, str):
-                    self.responder(400, {"error": "Datos incorrectos"})
+                    self.responder(400, {"error": "Datos incorrectos ingresar los datos correctos"})
                     return
 
                 email = email.strip()
